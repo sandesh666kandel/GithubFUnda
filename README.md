@@ -8,7 +8,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the __yml___ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._---
+  -: Enter the playbook file._---
 - name: Installing and Launch Filebeat
   hosts: webservers
   become: yes
@@ -59,11 +59,11 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly __available___, in addition to restricting __access___ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_Load Balancer allows to redirect the traffic to the most available Container. Jump BOx protects from other users to log in and enables me to add yml files. 
+- What aspect of security do load balancers protect? What is the advantage of a jump box?_Load Balancer allows to redirect the traffic to the most available Container. Jump BOx protects from other users to log in and enables me to add yml files. 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the __traffic___ and system __files___.
-- _TODO: What does Filebeat watch for?_File Request.
-- _TODO: What does Metricbeat record?_VM usage.
+-  What does Filebeat watch for?_File Request.
+-  What does Metricbeat record?_VM usage.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -80,10 +80,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the __Jumpbox___ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_103.217.166.23
+-  Add whitelisted IP addresses_103.217.166.23
 
 Machines within the network can only be accessed by __Jumpbox___.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_ Jumpbox , 10.0.0.4
+-: Which machine did you allow to access your ELK VM? What was its IP address?_ Jumpbox , 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -99,7 +99,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - _TODO: What is the main advantage of automating configuration with Ansible?_The main advantage is that it allows to automate creation of containers with yml files.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- : In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - ... - name: Install docker.io
 
 - ... - name: Install python3-pip
@@ -117,13 +117,13 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_Web-1 = 10.0.0.5, Web-2 = 10.0.0.6
+-  List the IP addresses of the machines you are monitoring_Web-1 = 10.0.0.5, Web-2 = 10.0.0.6
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_ Filebeat and Metricbeat.
+-  Specify which Beats you successfully installed_ Filebeat and Metricbeat.
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- : In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
 Filebeat collects data form the requested file. for eg: the file path requested
 Metricbeat collects data from the container usage i.e RAM memory, CPU etc. For eg: CPU Usage.
@@ -136,7 +136,7 @@ SSH into the control node and follow the steps below:
 - Update the __hosts___ file to include the VM IPs.
 - Run the playbook, and navigate to __VM__ to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+_: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 Elk-playbook.yml. We copy it into Jumpbox.
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
