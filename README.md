@@ -77,7 +77,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Jump Box | Gateway  | 10.0.0.1 , 20.94.240.136   | Linux            |
 | Web-1     |Container          |10.0.0.5            |Linux                  |
 | Web-2    | Container         |         10.0.0.6   |Linux                  |
-| Elk-Server   Monitor Traffic |10.1.0.5          |Linux            |                  |
+| Elk-Server   Monitor Traffic |10.1.0.5  , 40.86.163.77       |Linux            |                  |
 
 ### Access Policies
 
@@ -96,7 +96,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | Yes              |   103.217.166.23  |
 | web-1         |No                     |   10.0.0.4                   |
 | web-2         |  NO                   |   10.0.0.4           |
-| Elk-Server     | Yes           |103.217.166.23|
+| Elk-Server     | Yes           |103.217.166.23 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
