@@ -77,7 +77,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Jump Box | Gateway  | 10.0.0.1 , 20.94.240.136   | Linux            |
 | Web-1     |Container          |10.0.0.5            |Linux                  |
 | Web-2    | Container         |         10.0.0.6   |Linux                  |
-| Elk-Server   Monitor Traffic |10.1.0.5  , 40.86.163.77       |Linux            |                  |
+| Elk-Server |  Monitor Traffic |10.1.0.5  , 40.86.163.77       |Linux            |                  
 
 ### Access Policies
 
