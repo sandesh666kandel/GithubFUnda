@@ -9,6 +9,8 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the __yml___ file may be used to install only certain pieces of it, such as Filebeat.
 
   -: Enter the playbook file._---
+  
+  ```
 - name: Installing and Launch Filebeat
   hosts: webservers
   become: yes
@@ -44,9 +46,11 @@ These files have been tested and used to generate a live ELK deployment on Azure
     systemd:
       name: filebeat
       enabled: yes
+      
+```
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -62,15 +66,15 @@ Load balancing ensures that the application will be highly __available___, in ad
 - What aspect of security do load balancers protect? What is the advantage of a jump box?_Load Balancer allows to redirect the traffic to the most available Container. Jump BOx protects from other users to log in and enables me to add yml files. 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the __traffic___ and system __files___.
--  What does Filebeat watch for?_File Request.
--  What does Metricbeat record?_VM usage.
+-  What does Filebeat watch for?_File Request locations and server responses
+-  What does Metricbeat record?_VM performance and CPU, memory usage.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
+| Jump Box | Gateway  | 10.0.0.1 , 20.94.240.136   | Linux            |
 | Web-1     |Container          |10.0.0.5            |Linux                  |
 | Web-2    | Container         |         10.0.0.6   |Linux                  |
 | Elk-Server   Monitor Traffic |10.1.0.5          |Linux            |                  |
